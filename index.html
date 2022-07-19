@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+  <div class="center">
+    <form name="forms">
+      <div class="buttons">
+      <input type="text" name="answer"><br><br>
+      <input type="button" value="7" onclick="forms.answer.value +='7' ">
+      <input type="button" value="8" onclick="forms.answer.value +='8' ">
+      <input type="button" value="9" onclick="forms.answer.value +='9' ">
+      <input type="button" value="+" onclick="forms.answer.value +='+' "><br>
+      <input type="button" value="4" onclick="forms.answer.value +='4'">
+      <input type="button" value="5" onclick="forms.answer.value +='5'">
+      <input type="button" value="6" onclick="forms.answer.value +='6'">
+      <input type="button" value="-" onclick="forms.answer.value +='-'"><br>
+      <input type="button" value="1" onclick="forms.answer.value +='1'">
+      <input type="button" value="2" onclick="forms.answer.value +='2'">
+    <input type="button" value="3" onclick="forms.answer.value +='3'">
+      <input type="button" value="*" onclick="forms.answer.value +='*'"><br>
+      <input type="button" value="0" onclick="forms.answer.value +='0'">
+      <input type="button" value="." onclick="forms.answer.value +='.'">
+      <input type="button" value="/" onclick="forms.answer.value +='/'">
+      <input type="button" id="equal" value="=" onclick="forms.answer.value=eval(form.answer.value) "><br>
+      <input type="button" id="clear" value="Clear All" onclick="forms.answer.value=''" >
+
+    </form>
+
+  </div>
+
+  </body>
+</html>
